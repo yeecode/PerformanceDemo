@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="jquery-3.1.1.js"></script>
+
+    <script type="text/javascript">
+        function queryImage() {
+            $.ajax({
+                url: "http://localhost:8888/01",
+                timeout: 5000,
+                complete: function () {
+                    $.ajax({
+                        url: "http://localhost:8888/02",
+                        timeout: 5000,
+                        complete: function () {
+                            $.ajax({
+                                url: "http://localhost:8888/03",
+                                timeout: 5000
+                            });
+                        }
+                    });
+                }
+            });
+            setTimeout(queryImage, 5000);
+        }
+
+        window.onload(queryImage());
+    </script>
+</head>
+
+<body>

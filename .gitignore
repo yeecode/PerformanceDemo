@@ -1,0 +1,16 @@
+.idea
+.vscode
+.settings
+.mvn
+.classpath
+.project
+target
+out
+*.iml
+*.rar
+*.7z
+*.tempdata
+*.lnk
+~*.*
+*.exe
+*.tmp
