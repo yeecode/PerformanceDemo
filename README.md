@@ -24,15 +24,15 @@ ThreadLocal使用示例。
 
 ### 示例6
 
-多线程协作之共同协作式触发示例，基于CountDownLatch实现。
+多线程协作之分总式同步示例，基于CountDownLatch实现。
 
 ### 示例7
 
-多线程协作之栅栏等待式协作示例，基于CyclicBarrier实现
+多线程协作之栅栏式同步示例，基于CyclicBarrier实现
 
 ### 示例8
 
-多线程协作之总分总式协作示例，基于ForkJoinPool实现
+多线程协作之总分总式同步示例，基于ForkJoinPool实现
 
 ### 示例9
 
