@@ -1,10 +1,10 @@
-.idea
+.idea/
 .vscode
 .settings
 .mvn
 .classpath
 .project
-target
+target/
 out
 *.iml
 *.rar
