@@ -27,11 +27,11 @@ public class CircuitBreakerService {
     String queryUserNameById(int i) throws InterruptedException {
         System.out.print("正在查询用户名，用户编号为" + i);
         int randomValue = new Random().nextInt(100);
-        if (randomValue <= 30) {
+        if (randomValue < 30) {
             // 约30%概率会触发异常
             System.out.println(" : 查询发生异常 ");
             throw new RuntimeException();
-        } else if (randomValue <= 60) {
+        } else if (randomValue < 60) {
             // 约30%概率会触发超时
             System.out.println(" : 查询发生延迟 ");
             Thread.sleep(50);
